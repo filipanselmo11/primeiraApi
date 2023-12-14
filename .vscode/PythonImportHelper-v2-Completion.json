@@ -1,0 +1,46 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def home():\n    return {\"Vendas\": vendas ,\"Tamanho\": len(vendas)}\n@app.get('/vendas/{id}')\ndef get_venda(id: int):\n    if id in vendas:\n        return vendas[id]\n    else:\n        return {\"Erro\": \"Id da venda inexistente\"}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_venda",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_venda(id: int):\n    if id in vendas:\n        return vendas[id]\n    else:\n        return {\"Erro\": \"Id da venda inexistente\"}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\nvendas = {\n    1: {\"item\": \"lata\", \"preco\": 4, \"quantidade\": 5},\n    2: {\"item\": \"garrafa\", \"preco\": 20, \"quantidade\": 3},\n    3: {\"item\": \"panela de pressao\", \"preco\": 4.50, \"quantidade\": 2},\n    4: {\"item\": \"ventilador\", \"preco\": 30, \"quantidade\": 10},\n}\n#REST API\n@app.get('/')\ndef home():",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "vendas",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "vendas = {\n    1: {\"item\": \"lata\", \"preco\": 4, \"quantidade\": 5},\n    2: {\"item\": \"garrafa\", \"preco\": 20, \"quantidade\": 3},\n    3: {\"item\": \"panela de pressao\", \"preco\": 4.50, \"quantidade\": 2},\n    4: {\"item\": \"ventilador\", \"preco\": 30, \"quantidade\": 10},\n}\n#REST API\n@app.get('/')\ndef home():\n    return {\"Vendas\": vendas ,\"Tamanho\": len(vendas)}",
+        "detail": "main",
+        "documentation": {}
+    }
+]
